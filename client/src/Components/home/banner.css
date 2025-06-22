@@ -1,0 +1,46 @@
+.banner-img {
+    width: 100vw;
+    height: 280px;
+    object-fit: cover;
+  }
+  
+  .carousel {
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  /* Custom navigation arrows */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #494949;
+    border: none;
+    height: 104px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 24px;
+  }
+  
+  .carousel-arrow.left {
+    left: 0;
+  }
+  
+  .carousel-arrow.right {
+    right: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner-img {
+      height: 180px;
+    }
+  
+    .carousel-arrow {
+      height: 70px;
+      font-size: 20px;
+    }
+  }
+  

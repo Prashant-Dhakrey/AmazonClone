@@ -1,0 +1,83 @@
+.home_section {
+    width: 100%;
+    position: relative;
+    top: 60px;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Banner Section */
+  .banner_part {
+    margin-bottom: 20px;
+  }
+  
+  /* Slide Section Layout */
+  .slide_part {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .left_slide {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  /* Right Slide Styling */
+  .right_slide {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .right_slide h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .right_slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .see-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007185;
+    font-weight: 600;
+  }
+  
+  .see-more-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Center Promotional Banner */
+  .center_img {
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .center_img img {
+    width: 100%;
+    max-width: 970px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Add spacing below each Slide component */
+  .home_section > .slide_part + .slide_part,
+  .home_section > .slide_part + .center_img,
+  .home_section > .slide_part + .slide {
+    margin-top: 30px;
+  }
+  
